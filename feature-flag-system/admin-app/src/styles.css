@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #1d2733;
+  background: #f5f7fb;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  background: #1e6b52;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  min-height: 38px;
+  padding: 0 14px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.secondary {
+  background: #5b6675;
+}
+
+.danger {
+  background: #a02d2d;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 40px 20px;
+}
+
+.narrow {
+  max-width: 500px;
+}
+
+.topbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+.eyebrow {
+  color: #5b6675;
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(300px, 380px) 1fr;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #d9e2ec;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  color: #344054;
+  display: grid;
+  font-weight: 700;
+  gap: 6px;
+}
+
+.checkbox {
+  align-items: center;
+  display: flex;
+}
+
+.checkbox input {
+  min-height: auto;
+  width: auto;
+}
+
+input,
+textarea {
+  border: 1px solid #c6d0dc;
+  border-radius: 6px;
+  min-height: 42px;
+  padding: 10px 12px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e4e9f0;
+  padding: 12px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 4px 10px;
+}
+
+.on {
+  background: #e4f7ee;
+  color: #17613a;
+}
+
+.off {
+  background: #f1f3f5;
+  color: #596579;
+}
+
+.alert {
+  border-radius: 6px;
+  margin: 0;
+  padding: 10px 12px;
+}
+
+.error {
+  background: #fdeaea;
+  color: #9b1c1c;
+}
+
+.success {
+  background: #e8f6ef;
+  color: #17613a;
+}
+
+.switch {
+  margin: 18px 0 0;
+}
+
+a {
+  color: #1e6b52;
+  font-weight: 800;
+}
+
+@media (max-width: 860px) {
+  .grid,
+  .topbar {
+    display: grid;
+  }
+}
